@@ -20,7 +20,7 @@ notes.forEach(note=>{
 })
 
 //* 2-Tomar los datos del formulario e ir mostrandolos en notita de ejemplo // PAU
-
+// prueba
 
 //* 3-Guardar los datos de nueva nota en LS y mostrarlos // PAU
 
