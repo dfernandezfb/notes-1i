@@ -3,10 +3,7 @@
 //* 3-Guardar los datos de nueva nota en LS y mostrarlos // PAU
 //* 4-Agregar botón para eliminar // DIEGO
 
-let textArea = document.getElementById('note-text');
-let dashboard = document.querySelector('.dashboard');
-let noteForm = document.querySelector('form');
-let noteExample = document.querySelector('#note-example');
+import {dashboard, noteExample, textArea, noteForm} from './../helpers/constants.js'
 
 
 //* 1-Mostrar datos guardados en LS // DIEGO
