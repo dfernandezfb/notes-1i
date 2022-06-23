@@ -12,7 +12,7 @@ let notes = JSON.parse(localStorage.getItem('notes'));
 notes.forEach(note=>{
   let newNote = document.createElement('div');
   newNote.classList.add('note-style','my-1','mx-2','d-flex','justify-content-center','align-items-center');
-  newNote.innerText = 'text';
+  newNote.innerText = note.text;
   dashboard.appendChild(newNote);
 })
 
@@ -35,3 +35,6 @@ noteForm.addEventListener('submit',() =>{
 })
 
 //* 4-Agregar botón para eliminar // DIEGO
+
+console.log('Aca funciona el borrado');
+let favoriteNumber = [1,2,3,4,5,6,7,8,9].find(number=>number===7);
