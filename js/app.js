@@ -12,7 +12,7 @@ let notes = JSON.parse(localStorage.getItem('notes'));
 notes.forEach(note=>{
   let newNote = document.createElement('div');
   newNote.classList.add('note-style','my-1','mx-2','d-flex','justify-content-center','align-items-center');
-  newNote.innerText = note.text;
+  newNote.innerText = 'text';
   dashboard.appendChild(newNote);
 })
 
@@ -28,5 +28,10 @@ textArea.addEventListener('keyup', (e) => {
 
 //* 3-Guardar los datos de nueva nota en LS y mostrarlos // PAU
 
+noteForm.addEventListener('submit',() =>{
+  let notes = JSON.parse(localStorage.getItem('notes'))
+  notes.push({id: notes.length + 1, text: textArea.value})
+  localStorage.setItem('notes',JSON.stringify(notes))
+})
 
 //* 4-Agregar botón para eliminar // DIEGO
