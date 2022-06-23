@@ -18,6 +18,13 @@ notes.forEach(note=>{
 
 //* 2-Tomar los datos del formulario e ir mostrandolos en notita de ejemplo // PAU
 
+textArea.addEventListener('keyup', (e) => {
+  noteExample.innerText = e.target.value
+  if(e.target.value == ''){
+    noteExample.innerText = 'Escriba una nota'
+  }
+
+})
 
 //* 3-Guardar los datos de nueva nota en LS y mostrarlos // PAU
 
